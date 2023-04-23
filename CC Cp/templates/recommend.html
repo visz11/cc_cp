@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Recommendation System</title>
+</head>
+<body>
+    <h1>Flight Recommendation System</h1>
+    <p>Recommended flights:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Flight</th>
+                <th>Description</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in recommended_flights.iterrows() %}
+                <tr>
+                    <td>{{ row['Flight'] }}</td>
+                    <td>{{ row['Description'] }}</td>
+                    <td>{{ row['Rating'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Recommendation System</title>
+    <style>
+        /* Style for the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        /* Style for table headers */
+        th {
+            background-color: #f2f2f2;
+            color: #444444;
+            font-weight: bold;
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #dddddd;
+        }
+        
+        /* Style for table cells */
+        td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #dddddd;
+        }
+        
+        /* Style for table rows on hover */
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        /* Style for the page header */
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        
+        /* Style for the paragraph */
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Recommendation System</h1>
+    <p>Recommended flights:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Flight</th>
+                <th>Description</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in recommended_flights.iterrows() %}
+                <tr>
+                    <td>{{ row['Flight'] }}</td>
+                    <td>{{ row['Description'] }}</td>
+                    <td>{{ row['Rating'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

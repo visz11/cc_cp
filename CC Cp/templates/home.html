@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Recommendation System</title>
+</head>
+<body>
+    <h1>Flight Recommendation System</h1>
+    <form action="/recommend" method="POST">
+        <label for="user_input">Enter a description(between 0 and 5):</label>
+        <input type="text" id="user_input" name="user_input" min="0" max="5" step="0.1" required>
+        <br><br>
+        <label for="user_rating">Enter a rating for a flight (between 0 and 5):</label>
+        <input type="number" id="user_rating" name="user_rating" min="0" max="5" step="0.1" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Recommendation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0077c2;
+        }
+
+        form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            border: none;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+        }
+
+        input[type="submit"] {
+            background-color: #0077c2;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005ea6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Recommendation System</h1>
+    <form action="/recommend" method="POST">
+        <label for="user_input">Enter a description:</label>
+        <input type="text" id="user_input" name="user_input" min="0" max="5" step="0.1" required>
+        <br><br>
+        <label for="user_rating">Enter a rating for a flight (between 0 and 5):</label>
+        <input type="number" id="user_rating" name="user_rating" min="0" max="5" step="0.1" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
